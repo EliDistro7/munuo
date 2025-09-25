@@ -16,7 +16,7 @@ export default function ToursPage() {
     {
       title: t('tours.stonetown.title'),
       description: t('tours.stonetown.desc'),
-      image: 'https://images.pexels.com/photos/2832382/pexels-photo-2832382.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/st1.jpg',
       duration: '4 hours',
       groupSize: '2-8 people',
       price: '$45',
@@ -25,7 +25,7 @@ export default function ToursPage() {
     {
       title: t('tours.spice.title'),
       description: t('tours.spice.desc'),
-      image: 'https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/spice1.jpg',
       duration: '6 hours',
       groupSize: '2-12 people',
       price: '$35',
@@ -34,21 +34,13 @@ export default function ToursPage() {
     {
       title: t('tours.beach.title'),
       description: t('tours.beach.desc'),
-      image: 'https://images.pexels.com/photos/1320637/pexels-photo-1320637.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/beach1.jpg',
       duration: 'Full Day',
       groupSize: '2-15 people',
       price: '$65',
       highlights: ['Snorkeling Equipment', 'Beach Activities', 'Fresh Seafood', 'Sunset Views']
     },
-    {
-      title: t('tours.dhow.title'),
-      description: t('tours.dhow.desc'),
-      image: 'https://images.pexels.com/photos/1630546/pexels-photo-1630546.jpeg?auto=compress&cs=tinysrgb&w=800',
-      duration: '3 hours',
-      groupSize: '4-20 people',
-      price: '$40',
-      highlights: ['Traditional Dhow', 'Sunset Views', 'Light Refreshments', 'Cultural Experience']
-    },
+   
     {
       title: t('tours.safari.title'),
       description: t('tours.safari.desc'),
