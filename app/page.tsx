@@ -14,17 +14,17 @@ export default function HomePage() {
   const destinations = [
     {
       name: 'Stone Town',
-      image: 'https://images.pexels.com/photos/2832382/pexels-photo-2832382.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/st1.jpg',
       description: 'UNESCO World Heritage Site'
     },
     {
       name: 'Nungwi Beach',
-      image: 'https://images.pexels.com/photos/1320637/pexels-photo-1320637.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/nungwi1.jpg',
       description: 'Pristine white sand beaches'
     },
     {
       name: 'Spice Farms',
-      image: 'https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/spice1.jpg',
       description: 'Aromatic spice plantations'
     },
   ];
