@@ -243,7 +243,7 @@ export default function LanguageLearningPage() {
             
             <div className="relative">
               <img
-                src="https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=800"
+                src="/sw1.png"
                 alt="Learning Swahili"
                 className="rounded-2xl shadow-2xl"
               />

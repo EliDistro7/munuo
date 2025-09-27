@@ -14,7 +14,7 @@ export default function BlogPage() {
       id: 1,
       title: 'Best Time to Visit Zanzibar: A Complete Guide',
       excerpt: 'Discover the optimal seasons for your Zanzibar adventure, from dry seasons to cultural festivals.',
-      image: 'https://images.pexels.com/photos/1320637/pexels-photo-1320637.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/zanz1.png',
       category: 'Travel Tips',
       author: 'Munuo Travels',
       date: '2024-01-15',
@@ -24,7 +24,7 @@ export default function BlogPage() {
       id: 2,
       title: '10 Essential Swahili Phrases for Travelers',
       excerpt: 'Master these basic Swahili expressions to enhance your cultural experience in Zanzibar.',
-      image: 'https://images.pexels.com/photos/5212345/pexels-photo-5212345.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/sw1.png',
       category: 'Language Learning',
       author: 'Munuo Travels',
       date: '2024-01-12',
@@ -34,7 +34,7 @@ export default function BlogPage() {
       id: 3,
       title: 'Stone Town: A Walking Guide to History',
       excerpt: 'Navigate the UNESCO World Heritage site with our comprehensive walking tour guide.',
-      image: 'https://images.pexels.com/photos/2832382/pexels-photo-2832382.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/st1.jpg',
       category: 'Cultural Guide',
       author: 'Munuo Travels',
       date: '2024-01-10',
@@ -44,7 +44,7 @@ export default function BlogPage() {
       id: 4,
       title: 'Spice Tour Guide: What to Expect',
       excerpt: 'Everything you need to know about Zanzibar\'s famous spice tours and plantations.',
-      image: 'https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/spice1.png',
       category: 'Tour Guide',
       author: 'Munuo Travels',
       date: '2024-01-08',
@@ -91,7 +91,7 @@ export default function BlogPage() {
         <div 
           className="absolute inset-0 bg-cover bg-center opacity-20"
           style={{
-            backgroundImage: 'url(https://images.pexels.com/photos/159711/books-bookstore-book-reading-159711.jpeg?auto=compress&cs=tinysrgb&w=1200)'
+            backgroundImage: 'url(/zanz1.png)'
           }}
         />
         
@@ -114,7 +114,7 @@ export default function BlogPage() {
           <div className="mb-16">
             <Card className="overflow-hidden border-0 shadow-xl">
               <div className="grid lg:grid-cols-2 gap-0">
-                <div className="relative h-64 lg:h-full">
+                <div className="relative h-96 lg:h-full">
                   <img
                     src={blogPosts[0].image}
                     alt={blogPosts[0].title}
@@ -168,7 +168,7 @@ export default function BlogPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {blogPosts.slice(1).map((post) => (
               <Card key={post.id} className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div className="relative h-48 overflow-hidden">
+                <div className="relative h-96 overflow-hidden">
                   <img
                     src={post.image}
                     alt={post.title}
