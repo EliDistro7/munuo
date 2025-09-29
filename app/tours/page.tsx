@@ -44,7 +44,7 @@ export default function ToursPage() {
     {
       title: t('tours.safari.title'),
       description: t('tours.safari.desc'),
-      image: 'https://images.pexels.com/photos/994605/pexels-photo-994605.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/blue1.png',
       duration: 'Full Day',
       groupSize: '6-25 people',
       price: '$85',
@@ -99,7 +99,7 @@ export default function ToursPage() {
           <div className="grid lg:grid-cols-2 gap-12">
             {tours.map((tour, index) => (
               <Card key={index} className="group overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-300">
-                <div className="relative h-64 overflow-hidden">
+                <div className="relative h-96 overflow-hidden">
                   <img
                     src={tour.image}
                     alt={tour.title}

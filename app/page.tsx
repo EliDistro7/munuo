@@ -42,31 +42,26 @@ export default function HomePage() {
       {/* Hero Section with Advanced Parallax */}
       <section className="relative min-h-screen bg-gradient-to-br from-slate-900 via-sky-900 to-emerald-900 flex items-center overflow-hidden">
         {/* Dynamic Background Elements */}
-        <div className="absolute inset-0">
-          <div className="absolute top-20 left-10 w-[500px] h-[500px] bg-gradient-to-br from-orange-500/30 to-pink-500/30 rounded-full blur-3xl animate-pulse" />
-          <div className="absolute bottom-20 right-10 w-[400px] h-[400px] bg-gradient-to-br from-emerald-500/30 to-cyan-500/30 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}} />
-          <div className="absolute top-1/2 left-1/3 w-[300px] h-[300px] bg-gradient-to-br from-sky-500/20 to-blue-500/20 rounded-full blur-2xl animate-pulse" style={{animationDelay: '1s'}} />
-        </div>
+  <div className="absolute inset-0">
+    <video
+      autoPlay
+      loop
+      muted
+      playsInline
+      className="absolute inset-0 w-full h-full object-cover opacity-15"
+    >
+      <source src="/zanz.mp4" type="video/mp4" />
+      {/* Fallback to image if video fails */}
+      Your browser does not support the video tag.
+    </video>
+  </div>
 
-        {/* Geometric Shapes */}
-        <div className="absolute top-32 right-20 animate-bounce">
-          <div className="w-24 h-24 bg-gradient-to-br from-orange-400 to-red-500 rounded-3xl rotate-12 opacity-80 shadow-2xl backdrop-blur-sm" />
-        </div>
-        <div className="absolute bottom-40 left-20 animate-bounce" style={{animationDelay: '1s'}}>
-          <div className="w-20 h-20 bg-gradient-to-br from-emerald-400 to-teal-500 rounded-full opacity-70 shadow-2xl backdrop-blur-sm" />
-        </div>
-        <div className="absolute top-1/2 right-1/3 animate-bounce" style={{animationDelay: '0.5s'}}>
-          <div className="w-16 h-16 bg-gradient-to-br from-sky-400 to-blue-500 rounded-2xl rotate-45 opacity-60 shadow-xl backdrop-blur-sm" />
-        </div>
-        
-        {/* Fallback Background Image */}
-        <div 
-          className="absolute inset-0 bg-cover bg-center opacity-15"
-          style={{
-            backgroundImage: 'url(/dinner1.jpg)',
-          }}
-        />
-        
+  {/* Dynamic Background Elements */}
+  <div className="absolute inset-0">
+    <div className="absolute top-20 left-10 w-[500px] h-[500px] bg-gradient-to-br from-orange-500/30 to-pink-500/30 rounded-full blur-3xl animate-pulse" />
+    <div className="absolute bottom-20 right-10 w-[400px] h-[400px] bg-gradient-to-br from-emerald-500/30 to-cyan-500/30 rounded-full blur-3xl animate-pulse" style={{animationDelay: '2s'}} />
+    <div className="absolute top-1/2 left-1/3 w-[300px] h-[300px] bg-gradient-to-br from-sky-500/20 to-blue-500/20 rounded-full blur-2xl animate-pulse" style={{animationDelay: '1s'}} />
+  </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-32 z-10">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
             <div className="mb-12">

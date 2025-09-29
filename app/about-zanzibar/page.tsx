@@ -37,7 +37,7 @@ export default function AboutZanzibarPage() {
     {
       name: 'Stone Town',
       description: 'UNESCO World Heritage Site with rich Swahili culture',
-      image: '/food1.jpg',
+      image: '/st1.jpg',
       highlights: ['House of Wonders', 'Sultan\'s Palace', 'Forodhani Gardens', 'Mercury House']
     },
     {
@@ -49,13 +49,13 @@ export default function AboutZanzibarPage() {
     {
       name: 'Spice Plantations',
       description: 'Discover why Zanzibar is called the "Spice Island"',
-      image: 'https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/spice1.jpg',
       highlights: ['Cardamom & Cinnamon', 'Vanilla Orchards', 'Clove Trees', 'Traditional Medicine']
     },
     {
       name: 'Pristine Beaches',
       description: 'White sand beaches with crystal clear turquoise waters',
-      image: 'https://images.pexels.com/photos/1320637/pexels-photo-1320637.jpeg?auto=compress&cs=tinysrgb&w=800',
+      image: '/beach1.jpg',
       highlights: ['Nungwi Beach', 'Kendwa Beach', 'Paje Beach', 'Jambiani Beach']
     }
   ];
