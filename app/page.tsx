@@ -79,9 +79,7 @@ export default function HomePage() {
               </h1>
               
               {/* Subtitle */}
-              <p className="text-2xl md:text-3xl lg:text-4xl text-sky-100/90 mb-12 leading-relaxed font-light max-w-4xl backdrop-blur-sm">
-                Immerse yourself in culture, learn Swahili, and create unforgettable memories
-              </p>
+             
               
               {/* CTA Buttons */}
               <div className="flex flex-col sm:flex-row gap-6 mb-16">
