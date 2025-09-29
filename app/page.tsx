@@ -1,6 +1,6 @@
 'use client';
 
-import { ArrowRight, MapPin, Users, BookOpen, Star, Sparkles, Globe, Award, Compass, Heart, Camera } from 'lucide-react';
+import { ArrowRight, MapPin, Users, BookOpen, Star, Sparkles, Globe, Award, Compass, Heart, Camera, Eye, Target } from 'lucide-react';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
@@ -141,49 +141,132 @@ export default function HomePage() {
         </div>
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="text-center">
-            {/* Icon Badge */}
-            <div className="inline-flex items-center justify-center p-6 bg-gradient-to-br from-sky-500 via-sky-600 to-emerald-600 rounded-3xl mb-12 shadow-2xl transform hover:scale-110 transition-transform duration-300">
-              <Globe className="w-10 h-10 text-white animate-spin" style={{animationDuration: '8s'}} />
+        <div className="text-center">
+          {/* Icon Badge */}
+          <div className="inline-flex items-center justify-center p-6 bg-gradient-to-br from-sky-500 via-sky-600 to-emerald-600 rounded-3xl mb-12 shadow-2xl transform hover:scale-110 transition-transform duration-300">
+            <Globe className="w-10 h-10 text-white animate-spin" style={{animationDuration: '8s'}} />
+          </div>
+          
+          <div className="space-y-12">
+            {/* Founder Message */}
+            <div>
+              <h3 className="text-4xl md:text-5xl font-black text-transparent bg-gradient-to-r from-sky-600 via-emerald-600 to-orange-600 bg-clip-text mb-8 tracking-tight">
+                Message from Our Founder
+              </h3>
+              
+              <div className="glass-strong rounded-4xl p-10 md:p-12 shadow-2xl hover:shadow-3xl transition-all duration-300 hover:-translate-y-2 bg-white/90 backdrop-blur-xl border-2 border-sky-100">
+                <div className="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8 mb-8">
+                  <div className="relative group">
+                    <div className="absolute -inset-2 bg-gradient-to-r from-sky-400 via-emerald-400 to-orange-400 rounded-3xl blur-lg opacity-75 group-hover:opacity-100 transition duration-300"></div>
+                    <img
+                      src="/munuo.png"
+                      alt="Munuo - Founder & Managing Director"
+                      className="relative w-32 h-32 md:w-40 md:h-40 rounded-3xl object-cover shadow-2xl ring-4 ring-white transform group-hover:scale-105 transition-transform duration-300"
+                    />
+                    <div className="absolute -bottom-3 -right-3 w-12 h-12 bg-gradient-to-br from-orange-500 to-red-600 rounded-full border-4 border-white flex items-center justify-center shadow-xl">
+                      <MapPin className="w-6 h-6 text-white" />
+                    </div>
+                  </div>
+                  
+                  <div className="text-center md:text-left flex-1">
+                    <p className="text-2xl md:text-3xl font-black text-slate-800 mb-2">
+                      Davis Munuo
+                    </p>
+                    <p className="text-base md:text-lg font-bold text-transparent bg-gradient-to-r from-sky-600 to-emerald-600 bg-clip-text uppercase tracking-wider mb-3">
+                      Founder & Managing Director
+                    </p>
+                    <div className="flex flex-wrap justify-center md:justify-start gap-2">
+                      <span className="inline-flex items-center bg-gradient-to-r from-sky-100 to-sky-50 text-sky-700 px-4 py-2 rounded-full text-sm font-semibold">
+                        <Award className="w-4 h-4 mr-2" />
+                        15+ Years Experience
+                      </span>
+                      <span className="inline-flex items-center bg-gradient-to-r from-emerald-100 to-emerald-50 text-emerald-700 px-4 py-2 rounded-full text-sm font-semibold">
+                        <Heart className="w-4 h-4 mr-2" />
+                        500+ Happy Travelers
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                
+                <blockquote className="text-slate-700 leading-relaxed font-medium text-lg md:text-xl border-l-4 border-gradient-to-b from-sky-500 via-emerald-500 to-orange-500 pl-6 md:pl-8 italic bg-gradient-to-r from-sky-50/50 to-emerald-50/50 p-6 rounded-r-2xl">
+                  "At Munuo Travels, we believe that true travel goes beyond sightseeing—it's about connection, culture, and creating memories that last a lifetime. Our passion is to share the authentic beauty of Zanzibar and Tanzania with the world, offering experiences that touch the heart and broaden the mind. Every journey with us is crafted with care, guided by local expertise, and infused with the warmth of Tanzanian hospitality."
+                </blockquote>
+              </div>
             </div>
-            
-            {/* Main Heading */}
-            <h2 className="text-6xl md:text-8xl font-black mb-10 leading-tight">
-              <span className="bg-gradient-to-r from-slate-800 via-sky-700 to-emerald-700 bg-clip-text text-transparent">
-                Welcome to Paradise
-              </span>
-            </h2>
-            
-            {/* Description */}
-            <p className="text-2xl md:text-3xl text-slate-600 max-w-5xl mx-auto leading-relaxed font-light mb-16">
-              Experience the magic of Zanzibar through authentic cultural immersion and language learning adventures
-            </p>
-            
-            {/* Enhanced Stats Grid */}
-            <div className="grid md:grid-cols-3 gap-8 mt-16">
-              <div className="group text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-sky-100">
-                <div className="w-16 h-16 bg-gradient-to-br from-sky-500 to-sky-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:rotate-12 transition-transform">
-                  <Heart className="w-8 h-8 text-white" />
+
+            {/* Mission & Vision */}
+            <div className="grid md:grid-cols-2 gap-8">
+              {/* Mission */}
+              <div className="glass rounded-4xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-l-4 border-sky-500 bg-white/80 backdrop-blur-sm">
+                <div className="flex items-center mb-6">
+                  <div className="bg-gradient-to-br from-sky-500 to-sky-600 p-4 rounded-2xl shadow-lg mr-4">
+                    <Target className="h-7 w-7 text-white" strokeWidth={2.5} />
+                  </div>
+                  <h3 className="text-3xl font-black text-slate-800 tracking-tight">
+                    Our Mission
+                  </h3>
                 </div>
-                <div className="text-4xl font-black text-sky-600 mb-2">500+</div>
-                <div className="text-slate-600 font-semibold text-lg">Happy Travelers</div>
+                <p className="text-slate-700 font-medium leading-relaxed text-lg">
+                  To provide transformative travel experiences that connect visitors with the rich cultural heritage, natural beauty, and authentic spirit of Zanzibar and Tanzania, while promoting sustainable tourism and supporting local communities.
+                </p>
               </div>
-              <div className="group text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
-                <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:rotate-12 transition-transform">
-                  <Award className="w-8 h-8 text-white" />
+
+              {/* Vision */}
+              <div className="glass rounded-4xl p-8 md:p-10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border-l-4 border-orange-500 bg-white/80 backdrop-blur-sm">
+                <div className="flex items-center mb-6">
+                  <div className="bg-gradient-to-br from-orange-500 to-red-600 p-4 rounded-2xl shadow-lg mr-4">
+                    <Eye className="h-7 w-7 text-white" strokeWidth={2.5} />
+                  </div>
+                  <h3 className="text-3xl font-black text-slate-800 tracking-tight">
+                    Our Vision
+                  </h3>
                 </div>
-                <div className="text-4xl font-black text-emerald-600 mb-2">15+</div>
-                <div className="text-slate-600 font-semibold text-lg">Years Experience</div>
-              </div>
-              <div className="group text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-orange-100">
-                <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:rotate-12 transition-transform">
-                  <Compass className="w-8 h-8 text-white" />
-                </div>
-                <div className="text-4xl font-black text-orange-600 mb-2">50+</div>
-                <div className="text-slate-600 font-semibold text-lg">Cultural Sites</div>
+                <p className="text-slate-700 font-medium leading-relaxed text-lg">
+                  To be East Africa's most trusted and beloved travel partner, recognized for creating meaningful cultural exchanges, exceptional service, and unforgettable adventures that inspire travelers to explore, learn, and grow.
+                </p>
               </div>
             </div>
           </div>
+          
+          {/* Main Heading */}
+          <h2 className="text-6xl md:text-8xl font-black mb-10 leading-tight mt-16">
+            <span className="bg-gradient-to-r from-slate-800 via-sky-700 to-emerald-700 bg-clip-text text-transparent">
+              Welcome to Paradise
+            </span>
+          </h2>
+          
+          {/* Description */}
+          <p className="text-2xl md:text-3xl text-slate-600 max-w-5xl mx-auto leading-relaxed font-light mb-16">
+            Experience the magic of Zanzibar through authentic cultural immersion and language learning adventures
+          </p>
+          
+          {/* Enhanced Stats Grid */}
+          <div className="grid md:grid-cols-3 gap-8 mt-16">
+            <div className="group text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-sky-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-sky-500 to-sky-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:rotate-12 transition-transform">
+                <Heart className="w-8 h-8 text-white" />
+              </div>
+              <div className="text-4xl font-black text-sky-600 mb-2">500+</div>
+              <div className="text-slate-600 font-semibold text-lg">Happy Travelers</div>
+            </div>
+            
+            <div className="group text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-emerald-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:rotate-12 transition-transform">
+                <Award className="w-8 h-8 text-white" />
+              </div>
+              <div className="text-4xl font-black text-emerald-600 mb-2">15+</div>
+              <div className="text-slate-600 font-semibold text-lg">Years Experience</div>
+            </div>
+            
+            <div className="group text-center p-8 bg-white/80 backdrop-blur-sm rounded-3xl shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:scale-105 border border-orange-100">
+              <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-orange-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:rotate-12 transition-transform">
+                <Compass className="w-8 h-8 text-white" />
+              </div>
+              <div className="text-4xl font-black text-orange-600 mb-2">50+</div>
+              <div className="text-slate-600 font-semibold text-lg">Cultural Sites</div>
+            </div>
+          </div>
+        </div>
         </div>
       </section>
 
