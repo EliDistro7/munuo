@@ -53,7 +53,7 @@ export default function NdotoZetuPage() {
           content: "Through projects like Ndoto Zetu, and through respectful exchange with local communities, our travelers are invited to be part of something that lasts beyond their own trip."
         }
       },
-      ctaTitle: "Be Part of the Change",
+      ctaTitle: "Be Part of the Changessss",
       ctaText: "Ndoto Zetu brings together travelers, communities, and sustainable impact. Join us in creating meaningful connections that transform lives.",
       ctaButton: "Visit Ndoto Zetu",
       learnMore: "Learn more about our community projects"
